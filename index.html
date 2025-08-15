@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flappy Bird (Vanilla JS)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <canvas id="game" width="400" height="600" aria-label="Flappy Bird Game" role="img"></canvas>
+  </div>
+
+  <div class="hud">
+    <button class="btn" id="restart" title="Restart (R)">↻ Restart</button>
+    <button class="btn" id="pause" title="Pause (P)">⏯ Pause</button>
+    <div id="scores">
+      Score: <span id="score">0</span> • Best: <span id="best">0</span>
+    </div>
+  </div>
+
+  <div class="hint">
+    Tap/Click or press SPACE/↑ to flap • P to pause • R to restart
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
