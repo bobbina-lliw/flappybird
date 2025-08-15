@@ -1,0 +1,72 @@
+:root {
+  --bg: #70c5ce;
+  --ground: #ded895;
+  --pipe: #5ec268;
+  --pipe-dark: #3da552;
+  --bird: #ffcc00;
+  --bird-stroke: #b38400;
+  --ui: #0f172a;
+  --white: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(#74d0db, #5ec0db 65%, #9be4ef);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+  color: var(--ui);
+  overflow: hidden;
+}
+
+.wrap {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+canvas {
+  background: var(--bg);
+  width: min(92vw, 420px);
+  aspect-ratio: 2 / 3;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  image-rendering: pixelated;
+}
+
+.hud {
+  position: fixed;
+  inset: 0.75rem 0.75rem auto auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  z-index: 5;
+  user-select: none;
+}
+
+.btn {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: 700;
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+#scores {
+  background: rgba(255,255,255,.9);
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-weight: 800;
+}
+
+.hint {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  opacity: .8;
+}
